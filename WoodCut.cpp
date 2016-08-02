@@ -11,7 +11,7 @@ public:
         long maxElement = *(max_element(L.begin(), L.end()));
         //lb != 0, to avoid divide by zero error
         long lb = 1;
-        //We set ub = maxElement and not minElement, because it's possible to get >= k number of logs of length greater than minElement by not choosing some Len[i].
+        //We set ub = maxElement and not minElement, because it's possible to get >= k number of logs of length greater than minElement.
         long ub = maxElement;
         long result = 0;
         while(lb <= ub){
